@@ -1,11 +1,10 @@
-const menuList = ["research", "people", "publications", "equipments", "news", "opportunities", "contact"]
+const menuList = ["Works", "Bio"]
 function loadHeader( pageName ) {
     let headerLeft = document.createElement("div");
     headerLeft.id = "header-left";
     headerLeft.classList.add("menu-wrapper");
 
     let logo = pageName ? '<img src = "../images/logo.png" id = "logo"/>' : '<img src = "images/logo.png" id = "logo"/>';
-    logo = logo + "<div class = 'labname'><div class = 'large'>MicroRobotics</div><div class = 'small'>Laboratory</div></div>";
 
     headerLeft.innerHTML = pageName ? '<a href = "../index.html">' + logo + '</a>' : '<a href = "./index.html">' + logo + '</a>';
 
